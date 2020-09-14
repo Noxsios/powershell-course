@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# Welcome to IT4U PowerShell Course
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+### Intro
 
-## Commands
+**PowerShell** is _"a task automation and configuration management framework from Microsoft,
+consisting of a command-line shell and associated scripting language"_.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+It is the easiest way to perform mass Windows Administrator actions, if you know where to look.
 
-## Project layout
+!!! tldr "The PowerShell [Docs](https://docs.microsoft.com/en-us/powershell/) by Microsoft"
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<small>
+> This site will be updated weekly as new course material is written / added.
+<br>
+> If you want to see the source code for this go to the Github link in the upper right hand corner.
+</small>

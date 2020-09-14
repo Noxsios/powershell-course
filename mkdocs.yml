@@ -1,7 +1,7 @@
-site_name: "Misc Courses"
+site_name: "PowerShell Course for IT4U"
 site_author: "Noxsios"
-repo_url: https://github.com/Noxsios/noxsios.github.io
-site_description: "Misc courses written by Noxsios"
+repo_url: https://github.com/Noxsios/powershell-course
+site_description: "PowerShell course written by Noxsios"
 theme:
   palette:
     scheme: slate
@@ -12,7 +12,7 @@ theme:
   icon:
     logo: fontawesome/solid/paste
   features:
-    - tabs
+    # - tabs
     - instant
 
 copyright: "Copyright &copy; 2020 &raquo; Noxsios &laquo;"
@@ -26,6 +26,7 @@ extra:
 
 nav:
   - Home: "index.md"
+  - "Week 1": "intro.md"
 
 markdown_extensions:
   - codehilite:
