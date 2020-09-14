@@ -218,6 +218,33 @@
     Getting used to using the PowerShell CLI
   </a>
   
+    <nav class="md-nav" aria-label="Getting used to using the PowerShell CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-aliases" class="md-nav__link">
+    Command Aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    Getting Help
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigating-the-file-system" class="md-nav__link">
+    Navigating the File System
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -270,6 +297,33 @@
     Getting used to using the PowerShell CLI
   </a>
   
+    <nav class="md-nav" aria-label="Getting used to using the PowerShell CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-aliases" class="md-nav__link">
+    Command Aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    Getting Help
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigating-the-file-system" class="md-nav__link">
+    Navigating the File System
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -319,13 +373,95 @@
 <li>
 <p>Windows comes with a simple PowerShell editor, called PowerShell ISE (Integrated Scripting Environment), open <code>Windows PowerShell ISE</code></p>
 </li>
-<li>
-<p>A better IDE is <a href="https://code.visualstudio.com/">VSCode</a> with the PowerShell extension. Let me know if you want me to walk you through this install.</p>
-</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">ISE Goodness</p>
+<p>The ISE is a great tool to use. Shipped with every install of PowerShell, it includes syntax highlighting, intellisense, debugging, command search and so much more.</p>
+</div>
+<ul>
+<li>A better IDE is <a href="https://code.visualstudio.com/">VSCode</a> with the PowerShell extension. Let me know if you want me to walk you through this install.</li>
 </ul>
 <hr />
 <h3 id="getting-used-to-using-the-powershell-cli">Getting used to using the PowerShell CLI<a class="headerlink" href="#getting-used-to-using-the-powershell-cli" title="Permanent link">&para;</a></h3>
-<p>If you come from a Linux / Mac background, the PowerShell</p>
+<h4 id="command-aliases">Command Aliases<a class="headerlink" href="#command-aliases" title="Permanent link">&para;</a></h4>
+<p>If you come from a Linux / Mac background, the PowerShell CLI will be very familiar. Many Bash commands are also <strong>aliased</strong> to their PowerShell counterpart ex.</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Bash</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">cd</span> <span class="c1"># change directory</span>
+<span class="nb">pwd</span> <span class="c1"># print working directory</span>
+ls <span class="c1"># list</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">PowerShell</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">Set-Location</span>
+<span class="nb">Get-Locaton</span>
+<span class="nb">Get-ChildItem</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">View Aliases</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">Get-Alias</span> <span class="c"># To view all alias&#39;</span>
+<span class="nb">Get-Alias</span> <span class="s2">&quot;command&quot;</span> <span class="c"># To view the alias of a command, ex. Get-Alias rmdir</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+</div>
+<h4 id="getting-help">Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h4>
+<p>Like every other shell, PowerShell has an integrated helpfile system.</p>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Searching by Name</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">Get-Help</span> <span class="p">*</span><span class="n">file</span><span class="p">*</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Retrieving by Name</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">Get-Help</span> <span class="nb">Get-FileHash</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">With Examples</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">Get-Help</span> <span class="nb">Get-FileHash</span> <span class="n">-Examples</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+</div>
+<h4 id="navigating-the-file-system">Navigating the File System<a class="headerlink" href="#navigating-the-file-system" title="Permanent link">&para;</a></h4>
+<p>The first thing you should master using any CLI is how to navigate directories. This transfers over to every other shell seamlessly. The only difference is that Windows uses <code>\</code> during navigation and Linux/Mac use <code>/</code> during navigation.</p>
+<p>First, navigate to your Window partition's root folder.</p>
+<details class="tldr"><summary>Hint</summary><p>You will have to use a combination of <code>cd</code>/<code>Set-Location</code> and <code>ls</code>/<code>Get-ChildItem</code></p>
+</details>
+<p>Your prompt should now look like this: <code>PS C:\&gt;</code></p>
+<p>Navigate back to your user folder, so that your prompt returns back to <code>PS C:\Users\Username&gt;</code></p>
+<p>Now navigate to your <strong>Desktop</strong>, -&gt; <code>PS C:\Users\Username\Desktop&gt;</code></p>
+<p>View the contents of your desktop using <code>ls</code> or <code>Get-ChildItem</code></p>
+<p>Finally navigate back to your home folder using <code>cd ..</code></p>
+<blockquote>
+<p>In PowerShell as well as Bash, <code>.</code> when utilized in a path argument refers to the current directory, and <code>..</code> refers to the current
+parent directory.</p>
+</blockquote>
+<details class="info"><summary>Fastest Route</summary><p>To accomplish the above using the least amount of typing, the commands are:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">cd </span><span class="p">\</span>
+<span class="nb">cd </span><span class="nv">$home</span>
+<span class="nb">cd </span><span class="p">.\</span><span class="n">Desktop</span>
+<span class="nb">cd </span><span class="p">..</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>The second command uses one of the preset PowerShell variables, <code>$home</code> which returns the home directory of the current logged in user.</p>
+</details>
                 
                   
                     
@@ -334,7 +470,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: September 14, 2020 16:20:04
+      Last update: September 14, 2020 19:30:44
     
   </small>
 </div>
