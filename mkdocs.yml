@@ -1,6 +1,7 @@
 site_name: "PowerShell Course for IT4U"
 site_author: "Noxsios"
 repo_url: https://github.com/Noxsios/powershell-course
+repo_name: noxsios/powershell-course
 site_description: "PowerShell course written by Noxsios"
 theme:
   palette:
@@ -57,7 +58,7 @@ use_directory_urls: false # use if not hosted
 plugins: # use to disable search
   - git-revision-date-localized:
       type: datetime
-#  - search
+  - search
 #    - encryptcontent:
 #        global_password: 'wordpass'
 
