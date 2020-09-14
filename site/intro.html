@@ -19,7 +19,7 @@
     
     
       
-        <title>Home - PowerShell Course for IT4U</title>
+        <title>Week 1 - PowerShell Course for IT4U</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-it4u-powershell-course" class="md-skip">
+        <a href="#day-1" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Week 1
             
           </span>
         </div>
@@ -157,6 +157,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -168,14 +180,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
+        Week 1
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="index.html" title="Home" class="md-nav__link md-nav__link--active">
-      Home
+    <a href="intro.html" title="Week 1" class="md-nav__link md-nav__link--active">
+      Week 1
     </a>
     
       
@@ -194,9 +206,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
+  <a href="#environment-setup" class="md-nav__link">
+    Environment Setup
   </a>
+  
+    <nav class="md-nav" aria-label="Environment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-used-to-using-the-powershell-cli" class="md-nav__link">
+    Getting used to using the PowerShell CLI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -204,18 +229,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="intro.html" title="Week 1" class="md-nav__link">
-      Week 1
-    </a>
   </li>
 
     
@@ -245,9 +258,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
+  <a href="#environment-setup" class="md-nav__link">
+    Environment Setup
   </a>
+  
+    <nav class="md-nav" aria-label="Environment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-used-to-using-the-powershell-cli" class="md-nav__link">
+    Getting used to using the PowerShell CLI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -263,7 +289,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Noxsios/powershell-course/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Noxsios/powershell-course/edit/master/docs/intro.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -271,21 +297,35 @@
                   
                 
                 
-                <h1 id="welcome-to-it4u-powershell-course">Welcome to IT4U PowerShell Course<a class="headerlink" href="#welcome-to-it4u-powershell-course" title="Permanent link">&para;</a></h1>
-<h3 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h3>
-<p><strong>PowerShell</strong> is <em>"a task automation and configuration management framework from Microsoft,
-consisting of a command-line shell and associated scripting language"</em>.</p>
-<p>It is the easiest way to perform mass Windows Administrator actions, if you know where to look.</p>
-<div class="admonition tldr">
-<p class="admonition-title">The PowerShell <a href="https://docs.microsoft.com/en-us/powershell/">Docs</a> by Microsoft</p>
-</div>
-<p><small></p>
-<blockquote>
-<p>This site will be updated weekly as new course material is written / added.
-<br>
-If you want to see the source code for this go to the Github link in the upper right hand corner.
-</small></p>
-</blockquote>
+                <h1 id="day-1">Day 1<a class="headerlink" href="#day-1" title="Permanent link">&para;</a></h1>
+<h2 id="environment-setup">Environment Setup<a class="headerlink" href="#environment-setup" title="Permanent link">&para;</a></h2>
+<p>The first thing any good SysAdmin / Programmer does is setup their development environment.</p>
+<ul>
+<li>
+<p>First we are going to make sure that we know how to start and run <em>PowerShell</em></p>
+</li>
+<li>
+<p>Press the <span class="keys"><kbd class="key-windows">Win</kbd></span> key, then type <code>PowerShell</code>, then hit <span class="keys"><kbd class="key-enter">Enter</kbd></span>, this opens a new <strong>non-elevated</strong> <em>PowerShell</em> instance</p>
+</li>
+<li>
+<p><small> You may see there are some versions of PowerShell and PowerShell ISE ending with <code>(x86)</code>, these are 32-bit versions of PowerShell </small></p>
+</li>
+<li>
+<p>If you open a new PowerShell window, but this time right-click and select <code>Run as Administrator</code>, you will open a new PowerShell window with elevated permissions</p>
+</li>
+<li>
+<p><small> Notice the prompt ends in <code>system32</code>, this is a good indicator that the current window was launched as Admin</small></p>
+</li>
+<li>
+<p>Windows comes with a simple PowerShell editor, called PowerShell ISE (Integrated Scripting Environment), open <code>Windows PowerShell ISE</code></p>
+</li>
+<li>
+<p>A better IDE is <a href="https://code.visualstudio.com/">VSCode</a> with the PowerShell extension. Let me know if you want me to walk you through this install.</p>
+</li>
+</ul>
+<hr />
+<h3 id="getting-used-to-using-the-powershell-cli">Getting used to using the PowerShell CLI<a class="headerlink" href="#getting-used-to-using-the-powershell-cli" title="Permanent link">&para;</a></h3>
+<p>If you come from a Linux / Mac background, the PowerShell</p>
                 
                   
                     
@@ -317,20 +357,20 @@ If you want to see the source code for this go to the Github link in the upper r
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-        
-          <a href="intro.html" title="Week 1" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="index.html" title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
-                Week 1
+                Home
               </div>
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     </div>
