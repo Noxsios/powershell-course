@@ -1,0 +1,66 @@
+site_name: "Misc Courses"
+site_author: "Noxsios"
+repo_url: https://github.com/Noxsios/noxsios.github.io
+site_description: "Misc courses written by Noxsios"
+theme:
+  palette:
+    scheme: slate
+    primary: "orange"
+    accent: "amber"
+  name: material
+  language: en
+  icon:
+    logo: fontawesome/solid/paste
+  features:
+    - tabs
+    - instant
+
+copyright: "Copyright &copy; 2020 &raquo; Noxsios &laquo;"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/noxsios
+    - icon: fontawesome/solid/network-wired
+      link: http://noxsios.net:8080
+
+nav:
+  - Home: "index.md"
+
+markdown_extensions:
+  - codehilite:
+      linenums: true
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - attr_list
+  - pymdownx.tabbed
+
+use_directory_urls: false # use if not hosted
+plugins: # use to disable search
+  - git-revision-date-localized:
+      type: datetime
+#  - search
+#    - encryptcontent:
+#        global_password: 'wordpass'
+
+# Pip package installation:
+# pip install mkdocs
+# pip install mkdocs-material
+# pip install mkdocs-git-revision-date-localized-plugin
