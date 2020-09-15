@@ -19,7 +19,7 @@
     
     
       
-        <title>Home - PowerShell Course for IT4U</title>
+        <title>Week 2 - PowerShell Course for IT4U</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-it4u-powershell-course" class="md-skip">
+        <a href="#variables-numbers-and-strings" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Week 2
             
           </span>
         </div>
@@ -188,49 +188,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="index.html" title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="index.html" title="Home" class="md-nav__link">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -250,11 +212,72 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="week2.html" title="Week 2" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Week 2
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="week2.html" title="Week 2" class="md-nav__link md-nav__link--active">
       Week 2
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables-numbers-and-strings" class="md-nav__link">
+    Variables, Numbers and Strings
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables, Numbers and Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    Numbers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -272,8 +295,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -282,9 +303,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
+  <a href="#variables-numbers-and-strings" class="md-nav__link">
+    Variables, Numbers and Strings
   </a>
+  
+    <nav class="md-nav" aria-label="Variables, Numbers and Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    Numbers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -300,7 +348,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Noxsios/powershell-course/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Noxsios/powershell-course/edit/master/docs/week2.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -308,21 +356,143 @@
                   
                 
                 
-                <h1 id="welcome-to-it4u-powershell-course">Welcome to IT4U PowerShell Course<a class="headerlink" href="#welcome-to-it4u-powershell-course" title="Permanent link">&para;</a></h1>
-<h3 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h3>
-<p><strong>PowerShell</strong> is <em>"a task automation and configuration management framework from Microsoft,
-consisting of a command-line shell and associated scripting language"</em>.</p>
-<p>It is the easiest way to perform mass Windows Administrator actions, if you know where to look.</p>
-<div class="admonition tldr">
-<p class="admonition-title">The PowerShell <a href="https://docs.microsoft.com/en-us/powershell/">Docs</a> by Microsoft</p>
-</div>
-<p><small></p>
+                  <h1>Week 2</h1>
+                
+                <h2 id="variables-numbers-and-strings">Variables, Numbers and Strings<a class="headerlink" href="#variables-numbers-and-strings" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>This site will be updated weekly as new course material is written / added.
-<br>
-If you want to see the source code for this go to the Github link in the upper right hand corner.
-</small></p>
+<p><strong>PREVIEW</strong></p>
 </blockquote>
+<p>The PowerShell language is a weak typed, interpreted language.</p>
+<p>Insert lengthy explanation here =&gt;</p>
+<hr />
+<h4 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h4>
+<p>Variables are denoted by a dollar sign preceeding a name, ex.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nv">$hello</span> <span class="p">=</span> <span class="s2">&quot;Hello&quot;</span>
+<span class="nv">$world</span> <span class="p">=</span> <span class="s2">&quot; World!&quot;</span>
+<span class="nv">$hello</span> <span class="p">+</span> <span class="nv">$world</span>
+<span class="c"># Hello World!</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Having good descriptive varible names is crucial to writing good scripts, and is a practice that carries over to every programming language.</p>
+<p>When writing a script, try to follow a common naming case scheme like <strong>snake_case</strong> or camelCase <a href="https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841">Link to Aricle</a></p>
+<p>From <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables">about_Variables</a>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">&lt;#</span>
+<span class="cm">A variable is a unit of memory in which values are stored.</span>
+<span class="cm">In PowerShell, variables are represented by text strings</span>
+<span class="cm">that begin with a dollar sign ($), such as $a, $process, or $my_var.</span>
+
+<span class="cm">Variable names aren&#39;t case-sensitive, and can include spaces and special characters.</span>
+
+<span class="cm">PowerShell variables are loosely typed, which means that they</span>
+<span class="cm">aren&#39;t limited to a particular type of object. A single variable</span>
+<span class="cm">can even contain a collection, or array, of different types of objects at the same time.</span>
+<span class="cm">#&gt;</span>
+
+<span class="n">ex</span><span class="err">:</span>
+<span class="nv">$a</span> <span class="p">=</span> <span class="n">12</span>                         <span class="c"># System.Int32</span>
+<span class="nv">$a</span> <span class="p">=</span> <span class="s2">&quot;Word&quot;</span>                     <span class="c"># System.String</span>
+<span class="nv">$a</span> <span class="p">=</span> <span class="n">12</span><span class="p">,</span> <span class="s2">&quot;Word&quot;</span>                 <span class="c"># array of System.Int32, System.String</span>
+<span class="nv">$a</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="err">:</span><span class="p">\</span><span class="n">Windows</span>   <span class="c"># FileInfo and DirectoryInfo types</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h4 id="numbers">Numbers<a class="headerlink" href="#numbers" title="Permanent link">&para;</a></h4>
+<p>Numbers in PowerShell can either be used implicitly, or type cast into a more specific number type.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c"># Single line comments are denoted by a # at the start of the line</span>
+<span class="c"># Anything written in a comment is ignored</span>
+<span class="n">5</span><span class="p">+</span><span class="n">5</span>
+<span class="c"># Returns 10</span>
+<span class="no">[int]</span><span class="s2">&quot;5&quot;</span><span class="p">+</span><span class="n">5</span>
+<span class="c"># Also returns 10, because the string 5 is type cast to become an integer</span>
+</code></pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>PowerShell will attempt to type cast all data following a data type to be the same, ex:</p>
+</blockquote>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">function</span> <span class="n">add5</span><span class="p">(</span><span class="no">[int]</span><span class="nv">$number</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$number</span> <span class="p">+</span> <span class="n">5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">add5</span><span class="p">(</span><span class="n">10</span><span class="p">)</span>
+<span class="c"># Returns 15</span>
+
+<span class="n">add5</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+<span class="cm">&lt;# Returns:</span>
+<span class="cm">add5 : Cannot process argument transformation on parameter &#39;number&#39;. Cannot convert value &quot;hello&quot; to type</span>
+<span class="cm">&quot;System.Int32&quot;. Error: &quot;Input string was not in a correct format.&quot;</span>
+<span class="cm">At line:5 char:5</span>
+<span class="cm">+ add5(&quot;hello&quot;)</span>
+<span class="cm">+     ~~~~~~~~~</span>
+<span class="cm">    + CategoryInfo          : InvalidData: (:) [add5], ParameterBindingArgumentTransformationException</span>
+<span class="cm">    + FullyQualifiedErrorId : ParameterArgumentTransformationError,add5</span>
+<span class="cm">#&gt;</span>
+
+<span class="k">function</span> <span class="n">addString5</span><span class="p">(</span><span class="no">[string]</span><span class="nv">$number</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$number</span> <span class="p">+</span> <span class="n">5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">addString5</span><span class="p">(</span><span class="n">10</span><span class="p">)</span>
+<span class="c"># Returns 105, because 10 is type cast to be a string, and 5 is type cast to be a string</span>
+
+<span class="c"># If the following data is unable to be cast to the first data type, PowerShell will throw an error</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h4 id="strings">Strings<a class="headerlink" href="#strings" title="Permanent link">&para;</a></h4>
+<p><a href="https://powershellexplained.com/2017-01-13-powershell-variable-substitution-in-strings/">Variable Substitution</a></p>
                 
                   
                     
@@ -331,7 +501,7 @@ If you want to see the source code for this go to the Github link in the upper r
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 14, 2020 19:32:47</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 15, 2020 11:22:15</span>
     
   </small>
 </div>
@@ -354,20 +524,20 @@ If you want to see the source code for this go to the Github link in the upper r
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-        
-          <a href="intro.html" title="Week 1" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="intro.html" title="Week 1" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
                 Week 1
               </div>
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     </div>
