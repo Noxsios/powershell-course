@@ -9,6 +9,10 @@ It is the easiest way to perform mass Windows Administrator actions, if you know
 
 !!! tldr "The PowerShell [Docs](https://docs.microsoft.com/en-us/powershell/) by Microsoft"
 
+!!! tldr "[PowerShell 101 Book](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction)"
+
+![Why](https://i.redd.it/2ialma4xoiv41.jpg)
+
 <small>
 > This site will be updated weekly as new course material is written / added.
 <br>
