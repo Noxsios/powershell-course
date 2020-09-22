@@ -269,6 +269,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -331,6 +338,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -359,11 +373,8 @@
                   <h1>Week 2</h1>
                 
                 <h2 id="variables-numbers-and-strings">Variables, Numbers and Strings<a class="headerlink" href="#variables-numbers-and-strings" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><strong>PREVIEW</strong></p>
-</blockquote>
 <p>The PowerShell language is a weak typed, interpreted language.</p>
-<p>Insert lengthy explanation here =&gt;</p>
+<p>Insert lengthy explanation here &rarr;</p>
 <hr />
 <h4 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h4>
 <p>Variables are denoted by a dollar sign preceeding a name, ex.</p>
@@ -378,7 +389,8 @@
 </td></tr></table>
 
 <p>Having good descriptive varible names is crucial to writing good scripts, and is a practice that carries over to every programming language.</p>
-<p>When writing a script, try to follow a common naming case scheme like <strong>snake_case</strong> or camelCase <a href="https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841">Link to Aricle</a></p>
+<p><img alt="Variable Name Meme" src="https://i.pinimg.com/originals/e6/73/bd/e673bdd42a9ae12000c59df5dfcae440.jpg" /></p>
+<p>When writing a script, try to follow a common naming case scheme like <strong>snake_case</strong> or <strong>camelCase</strong> <a href="https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841">Link to Aricle</a></p>
 <p>From <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables">about_Variables</a>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -461,7 +473,9 @@
 23
 24
 25
-26</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">function</span> <span class="n">add5</span><span class="p">(</span><span class="no">[int]</span><span class="nv">$number</span><span class="p">)</span> <span class="p">{</span>
+26
+27
+28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">function</span> <span class="n">add5</span><span class="p">(</span><span class="no">[int]</span><span class="nv">$number</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nv">$number</span> <span class="p">+</span> <span class="n">5</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -470,6 +484,7 @@
 
 <span class="n">add5</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
 <span class="cm">&lt;# Returns:</span>
+
 <span class="cm">add5 : Cannot process argument transformation on parameter &#39;number&#39;. Cannot convert value &quot;hello&quot; to type</span>
 <span class="cm">&quot;System.Int32&quot;. Error: &quot;Input string was not in a correct format.&quot;</span>
 <span class="cm">At line:5 char:5</span>
@@ -477,6 +492,7 @@
 <span class="cm">+     ~~~~~~~~~</span>
 <span class="cm">    + CategoryInfo          : InvalidData: (:) [add5], ParameterBindingArgumentTransformationException</span>
 <span class="cm">    + FullyQualifiedErrorId : ParameterArgumentTransformationError,add5</span>
+
 <span class="cm">#&gt;</span>
 
 <span class="k">function</span> <span class="n">addString5</span><span class="p">(</span><span class="no">[string]</span><span class="nv">$number</span><span class="p">)</span> <span class="p">{</span>
@@ -492,7 +508,17 @@
 
 <hr />
 <h4 id="strings">Strings<a class="headerlink" href="#strings" title="Permanent link">&para;</a></h4>
-<p><a href="https://powershellexplained.com/2017-01-13-powershell-variable-substitution-in-strings/">Variable Substitution</a></p>
+<p>Strings are sequences of characters, usually arranged in words. In PowerShell you can <em>usually</em> tell something is a string if it is encased in double quotes, "", single quotes '', or backticks ``.</p>
+<p>This article - <a href="https://powershellexplained.com/2017-01-13-powershell-variable-substitution-in-strings/">Variable Substitution</a> has great examples on variable substituion within strings in PowerShell</p>
+<p>This article from the MS Docs explains all <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_special_characters">special_Characters</a></p>
+<hr />
+<h4 id="booleans">Booleans<a class="headerlink" href="#booleans" title="Permanent link">&para;</a></h4>
+<p>A boolean is either <em>true</em> or <em>false</em>. To a computer this is represented by a single bit. If true, the bit is <em>1</em>. If false the bit is <em>0</em>.</p>
+<p>In PowerShell a boolean is represented by <code>$true</code> or <code>$false</code>, null is represented by <code>$null</code>. <a href="https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-null?view=powershell-7">All about Null</a></p>
+<p><img alt="Differences Between Values" src="https://i.redd.it/vy1n3ionqgg51.png" /></p>
+<blockquote>
+<p>This picture is in relation to JavaScript, but the main idea still transfers</p>
+</blockquote>
                 
                   
                     
@@ -501,7 +527,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 15, 2020 11:22:15</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 22, 2020 14:47:42</span>
     
   </small>
 </div>
