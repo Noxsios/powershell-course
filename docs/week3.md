@@ -1,5 +1,3 @@
-## Logical Operators and RegEx
-
 After last week's feedback, the style of this course will be transitioning. Instead of teaching you the PowerShell language, I will be focusing on teaching you certain `functions`, `cmdlets` and utilities.
 
 ---
