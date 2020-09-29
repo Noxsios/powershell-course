@@ -1,6 +1,6 @@
 # Welcome to IT4U PowerShell Course
 
-### Intro
+### Intro [![Gitter](https://badges.gitter.im/powershell-course/community.svg)](https://gitter.im/powershell-course/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 **PowerShell** is _"a task automation and configuration management framework from Microsoft,
 consisting of a command-line shell and associated scripting language"_.

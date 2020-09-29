@@ -29,6 +29,7 @@ nav:
   - Home: "index.md"
   - "Week 1": "intro.md"
   - "Week 2": "week2.md"
+  - "Week 3": "week3.md"
 
 markdown_extensions:
   - codehilite:
