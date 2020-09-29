@@ -19,7 +19,7 @@
     
     
       
-        <title>Week3 - PowerShell Course for IT4U</title>
+        <title>Week 3 - PowerShell Course for IT4U</title>
       
     
     
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Week3
+              Week 3
             
           </span>
         </div>
@@ -220,6 +220,86 @@
   </li>
 
     
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Week 3
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="week3.html" title="Week 3" class="md-nav__link md-nav__link--active">
+      Week 3
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#logical-operators-and-regex" class="md-nav__link">
+    Logical Operators and RegEx
+  </a>
+  
+    <nav class="md-nav" aria-label="Logical Operators and RegEx">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-filehash-docs" class="md-nav__link">
+    Get-FileHash Docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-netconnection-docs" class="md-nav__link">
+    Test-NetConnection Docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netstat-docs" class="md-nav__link">
+    netstat Docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-process-tasklist" class="md-nav__link">
+    Get-Process / tasklist
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -246,6 +326,40 @@
     Logical Operators and RegEx
   </a>
   
+    <nav class="md-nav" aria-label="Logical Operators and RegEx">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-filehash-docs" class="md-nav__link">
+    Get-FileHash Docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-netconnection-docs" class="md-nav__link">
+    Test-NetConnection Docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netstat-docs" class="md-nav__link">
+    netstat Docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-process-tasklist" class="md-nav__link">
+    Get-Process / tasklist
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -268,12 +382,239 @@
                   
                 
                 
-                  <h1>Week3</h1>
+                  <h1>Week 3</h1>
                 
                 <h2 id="logical-operators-and-regex">Logical Operators and RegEx<a class="headerlink" href="#logical-operators-and-regex" title="Permanent link">&para;</a></h2>
+<p>After last week's feedback, the style of this course will be transitioning. Instead of teaching you the PowerShell language, I will be focusing on teaching you certain <code>functions</code>, <code>cmdlets</code> and utilities.</p>
+<hr />
+<h3 id="get-filehash-docs">Get-FileHash <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7">Docs</a><a class="headerlink" href="#get-filehash-docs" title="Permanent link">&para;</a></h3>
+<p>We reviewed this cmdlet last week, but here is a usage example.</p>
+<div class="admonition tldr">
+<p class="admonition-title">Get-FileHash Example</p>
+<ul>
+<li>
+<p>Right click this <a href="assets/test_hash.txt">File</a>, and select <span class="keys"><kbd>Save Link as...</kbd></span> and save to your desktop.</p>
+</li>
+<li>
+<p>Open a new PowerShell window and navigate to your desktop with <code class="highlight"><span class="nb">cd </span><span class="nv">$HOME</span><span class="p">\</span><span class="n">Desktop</span></code></p>
+</li>
+<li>
+<p>Calculate the SHA256 hash using <code class="highlight"><span class="nb">Get-FileHash</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">test_hash</span><span class="p">.</span><span class="n">txt</span> <span class="n">-Algorithm</span> <span class="n">SHA256</span></code></p>
+</li>
+</ul>
 <blockquote>
-<p><strong>PREVIEW</strong></p>
+<p>As you get better at knowing the order of certain command parameters you can omit the flagged names, ie <code>-Path</code> and <code>-Algorithm</code>, for within script usage, it is better to leave the statements verbose so that when you or another person return to the code it is clearer what the code is doing.</p>
 </blockquote>
+<ul>
+<li>
+<p>Now open the file in notepad, either by double clicking on the file or using <code class="highlight"><span class="n">notepad</span><span class="p">.</span><span class="n">exe</span> <span class="p">.\</span><span class="n">test_hash</span><span class="p">.</span><span class="n">txt</span></code>, then delete the last character (a period) then save and close the file.</p>
+</li>
+<li>
+<p>To test to see if the file hash changed, we can use a simple comparison, I have calculated the before value for you.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nv">$oldHash</span> <span class="p">=</span> <span class="s2">&quot;914523DA2E60C0AE77E21AD1EEB827F25508A6B6D984AF3E80E8D292D4ADD24B&quot;</span>
+
+<span class="nv">$newHash</span> <span class="p">=</span> <span class="nb">Get-FileHash</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">test_hash</span><span class="p">.</span><span class="n">txt</span> <span class="n">-Algorithm</span> <span class="n">SHA256</span>
+
+<span class="nv">$hashesEqual</span> <span class="p">=</span> <span class="nv">$oldHash</span> <span class="o">-eq</span> <span class="nv">$newHash</span><span class="p">.</span><span class="n">Hash</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nv">$hashesEqual</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$result</span> <span class="p">=</span> <span class="s2">&quot;are&quot;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nv">$result</span> <span class="p">=</span> <span class="s2">&quot;are not&quot;</span>
+<span class="p">}</span>
+
+<span class="nb">Write-Output</span> <span class="s2">&quot;The files $result equal.&quot;</span>
+
+<span class="c"># Should return : &quot;The files are not the same.&quot;</span>
+</code></pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p>Now re-add the period back in at the end of the file, and recalculate the above. The result should now be <code>The files are equal.</code></p>
+</li>
+</ul>
+</div>
+<p>For hashing explanation - <a href="https://www.sentinelone.com/blog/what-is-hash-how-does-it-work/">Expl</a></p>
+<hr />
+<h3 id="test-netconnection-docs">Test-NetConnection <a href="https://docs.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=win10-ps">Docs</a><a class="headerlink" href="#test-netconnection-docs" title="Permanent link">&para;</a></h3>
+<p>If a question asks you to check of <strong>Port 80</strong> is open on a remote server. Then <code>ping</code> will not be of use to you. This is where <code>Test-NetConnection</code> comes into play.</p>
+<p>Test-NetConnection allows you to ping a machine and also perform a TCP connection test on a specified port.</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Testing Internet Connection</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="err">:</span><span class="p">\</span><span class="n">Users</span><span class="p">\</span><span class="n">UserName</span><span class="p">&gt;</span> <span class="nb">Test-NetConnection</span>
+
+<span class="n">ComputerName</span>           <span class="err">:</span> <span class="n">internetbeacon</span><span class="p">.</span><span class="n">msedge</span><span class="p">.</span><span class="n">net</span>
+<span class="n">RemoteAddress</span>          <span class="err">:</span> <span class="n">13</span><span class="p">.</span><span class="n">107</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">52</span>
+<span class="n">InterfaceAlias</span>         <span class="err">:</span> <span class="n">Ethernet</span>
+<span class="n">SourceAddress</span>          <span class="err">:</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">3</span>
+<span class="n">PingSucceeded</span>          <span class="err">:</span> <span class="n">True</span>
+<span class="n">PingReplyDetails</span> <span class="p">(</span><span class="n">RTT</span><span class="p">)</span> <span class="err">:</span> <span class="n">13</span> <span class="n">ms</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Testing a TCP Port</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="err">:</span><span class="p">\</span><span class="n">Users</span><span class="p">\</span><span class="n">UserName</span><span class="p">&gt;</span> <span class="nb">Test-NetConnection</span> <span class="n">-ComputerName</span> <span class="n">google</span><span class="p">.</span><span class="n">com</span> <span class="n">-Port</span> <span class="n">80</span>
+
+<span class="n">ComputerName</span>     <span class="err">:</span> <span class="n">google</span><span class="p">.</span><span class="n">com</span>
+<span class="n">RemoteAddress</span>    <span class="err">:</span> <span class="n">172</span><span class="p">.</span><span class="n">217</span><span class="p">.</span><span class="n">22</span><span class="p">.</span><span class="n">14</span>
+<span class="n">RemotePort</span>       <span class="err">:</span> <span class="n">80</span>
+<span class="n">InterfaceAlias</span>   <span class="err">:</span> <span class="n">Ethernet</span>
+<span class="n">SourceAddress</span>    <span class="err">:</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">3</span>
+<span class="n">TcpTestSucceeded</span> <span class="err">:</span> <span class="n">True</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Testing a TCP Port - Verbose</label><div class="tabbed-content">
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="err">:</span><span class="p">\</span><span class="n">Users</span><span class="p">\</span><span class="n">UserName</span><span class="p">&gt;</span> <span class="nb">Test-NetConnection</span> <span class="n">-ComputerName</span> <span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span> <span class="n">-Port</span> <span class="n">53</span> <span class="n">-InformationLevel</span> <span class="n">Detailed</span>
+
+<span class="n">ComputerName</span>            <span class="err">:</span> <span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span>
+<span class="n">RemoteAddress</span>           <span class="err">:</span> <span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span>
+<span class="n">RemotePort</span>              <span class="err">:</span> <span class="n">53</span>
+<span class="n">NameResolutionResults</span>   <span class="err">:</span> <span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span>
+                        <span class="n">dns</span><span class="p">.</span><span class="n">google</span>
+<span class="n">MatchingIPsecRules</span>      <span class="err">:</span>
+<span class="n">NetworkIsolationContext</span> <span class="err">:</span> <span class="n">Internet</span>
+<span class="n">IsAdmin</span>                 <span class="err">:</span> <span class="n">False</span>
+<span class="n">InterfaceAlias</span>          <span class="err">:</span> <span class="n">Ethernet</span>
+<span class="n">SourceAddress</span>           <span class="err">:</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">3</span>
+<span class="n">NetRoute</span> <span class="p">(</span><span class="n">NextHop</span><span class="p">)</span>      <span class="err">:</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1</span>
+<span class="n">TcpTestSucceeded</span>        <span class="err">:</span> <span class="n">True</span>
+</code></pre></div>
+</td></tr></table>
+
+</div>
+</div>
+<div class="admonition tldr">
+<p class="admonition-title">Simple Port Sweep</p>
+<p>PowerShell can also perform a basic port sweep if you want to:</p>
+<p>This example uses <code>192.168.0.8</code> for my example IP, <mark>only portscan devices on your local network</mark>, <strong>doing so across an internet service will likely result in your IP becoming banned</strong>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">22</span><span class="p">..</span><span class="n">80</span> <span class="p">|</span> <span class="p">%</span> <span class="p">{</span> <span class="nb">Test-NetConnection</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">8</span> <span class="n">-Port</span> <span class="nv">$_</span> <span class="n">-WarningAction</span> <span class="n">SilentlyContinue</span> <span class="p">|</span> <span class="p">%</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;Port </span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">RemotePort</span><span class="p">)</span><span class="s2"> : </span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">TcpTestSucceeded</span><span class="p">)</span><span class="s2">&quot;</span> <span class="p">}</span> <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>% is an alias of ForEach-Object, within scripts utilize the full version, I am using the alias here for saving space</p>
+</blockquote>
+</div>
+<hr />
+<h3 id="netstat-docs">netstat <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/netstat">Docs</a><a class="headerlink" href="#netstat-docs" title="Permanent link">&para;</a></h3>
+<p>NETSTAT.EXE is a crossplatform utility that has been built into Windows for a very long time.</p>
+<p>This program: <em>"Displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics ..., and IPv6 statistics"</em>.</p>
+<p>In short, <code>netstat</code> is the first tool you should turn to when a question asks about an open/listening port on the local machine. This command's usage should transfer over seamlessly to both Mac and Linux.</p>
+<p>Some of my favorite combos:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">netstat</span> <span class="n">-ano</span>
+
+<span class="cm">&lt;#</span>
+<span class="cm">  All TCP and UDP</span>
+<span class="cm">  No DNS lookup</span>
+<span class="cm">  PID shown</span>
+<span class="cm">#&gt;</span>
+
+<span class="n">netstat</span> <span class="n">-r</span>
+
+<span class="cm">&lt;#</span>
+<span class="cm">  Routing table, useful for viewing your default gateway and listing physical interfaces</span>
+<span class="cm">#&gt;</span>
+
+<span class="n">netstat</span> <span class="n">-o</span> <span class="n">5</span>
+
+<span class="cm">&lt;#</span>
+<span class="cm">  Display active TCP connections and PIDs, loop every 5s</span>
+<span class="cm">#&gt;</span>
+
+<span class="n">netstat</span> <span class="n">-a</span> <span class="p">|</span> <span class="n">findstr</span> <span class="n">LISTENING</span>
+
+<span class="cm">&lt;#</span>
+<span class="cm">  List all listening connections / ports.</span>
+<span class="cm">#&gt;</span>
+
+<span class="n">netstat</span> <span class="n">-ano</span> <span class="p">|</span> <span class="n">findstr</span> <span class="n">80</span>
+
+<span class="cm">&lt;#</span>
+<span class="cm">  Filter by number</span>
+<span class="cm">#&gt;</span>
+</code></pre></div>
+</td></tr></table>
+
+<hr />
+<h3 id="get-process-tasklist">Get-Process / tasklist<a class="headerlink" href="#get-process-tasklist" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Moved to next week...</p>
+</blockquote>
+<hr />
                 
                   
                     
@@ -282,7 +623,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 22, 2020 14:47:42</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 29, 2020 14:39:27</span>
     
   </small>
 </div>
@@ -301,6 +642,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="week2.html" title="Week 2" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Week 2
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
