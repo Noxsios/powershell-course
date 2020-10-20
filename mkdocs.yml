@@ -30,6 +30,8 @@ nav:
   - "Week 1": "intro.md"
   - "Week 2": "week2.md"
   - "Week 3": "week3.md"
+  - "Week 4": "week4.md"
+  - "Pipeline": "pipeline.md"
 
 markdown_extensions:
   - codehilite:

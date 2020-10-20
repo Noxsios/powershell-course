@@ -45,7 +45,7 @@ For hashing explanation - [Expl](https://www.sentinelone.com/blog/what-is-hash-h
 
 ### Test-NetConnection [Docs](https://docs.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=win10-ps)
 
-If a question asks you to check of **Port 80** is open on a remote server. Then `ping` will not be of use to you. This is where `Test-NetConnection` comes into play.
+If a question asks you to check if **Port 80** is open on a remote server. Then `ping` will be of no use to you. This is where `Test-NetConnection` comes into play.
 
 Test-NetConnection allows you to ping a machine and also perform a TCP connection test on a specified port.
 
