@@ -19,7 +19,7 @@
     
     
       
-        <title>Week 2 - PowerShell Course for IT4U</title>
+        <title>Pipeline - PowerShell Course for IT4U</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#variables-numbers-and-strings" class="md-skip">
+        <a href="#the-pipeline" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Week 2
+              Pipeline
             
           </span>
         </div>
@@ -212,79 +212,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Week 2
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="week2.html" title="Week 2" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="week2.html" title="Week 2" class="md-nav__link">
       Week 2
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#variables-numbers-and-strings" class="md-nav__link">
-    Variables, Numbers and Strings
-  </a>
-  
-    <nav class="md-nav" aria-label="Variables, Numbers and Strings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#variables" class="md-nav__link">
-    Variables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#numbers" class="md-nav__link">
-    Numbers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#strings" class="md-nav__link">
-    Strings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#booleans" class="md-nav__link">
-    Booleans
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -316,11 +248,45 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="pipeline.html" title="Pipeline" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Pipeline
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="pipeline.html" title="Pipeline" class="md-nav__link md-nav__link--active">
       Pipeline
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-pipeline" class="md-nav__link">
+    The Pipeline
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -346,43 +312,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#variables-numbers-and-strings" class="md-nav__link">
-    Variables, Numbers and Strings
+  <a href="#the-pipeline" class="md-nav__link">
+    The Pipeline
   </a>
-  
-    <nav class="md-nav" aria-label="Variables, Numbers and Strings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#variables" class="md-nav__link">
-    Variables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#numbers" class="md-nav__link">
-    Numbers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#strings" class="md-nav__link">
-    Strings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#booleans" class="md-nav__link">
-    Booleans
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -398,7 +330,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Noxsios/powershell-course/edit/master/docs/week2.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Noxsios/powershell-course/edit/master/docs/pipeline.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -406,154 +338,26 @@
                   
                 
                 
-                  <h1>Week 2</h1>
+                  <h1>Pipeline</h1>
                 
-                <h2 id="variables-numbers-and-strings">Variables, Numbers and Strings<a class="headerlink" href="#variables-numbers-and-strings" title="Permanent link">&para;</a></h2>
-<p>The PowerShell language is a weak typed, interpreted language.</p>
-<p>Insert lengthy explanation here &rarr;</p>
-<hr />
-<h4 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h4>
-<p>Variables are denoted by a dollar sign preceeding a name, ex.</p>
+                <h2 id="the-pipeline">The Pipeline<a class="headerlink" href="#the-pipeline" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-7"><strong>pipeline</strong></a> is one of the most important concepts in PowerShell.</p>
+<p>The docs provide a much better explanation than I can provide, so please read them.</p>
+<p>Boiled down, the pipeline simply means taking the output of one command as the input of a sequential command, with both being separated by a "pipe" -&gt; | .</p>
+<p>ex.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nv">$hello</span> <span class="p">=</span> <span class="s2">&quot;Hello&quot;</span>
-<span class="nv">$world</span> <span class="p">=</span> <span class="s2">&quot; World!&quot;</span>
-<span class="nv">$hello</span> <span class="p">+</span> <span class="nv">$world</span>
-<span class="c"># Hello World!</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c"># Simple ping sweep</span>
+<span class="nv">$ping</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">NetworkInformation</span><span class="p">.</span><span class="n">Ping</span>
+<span class="n">1</span><span class="p">..</span><span class="n">255</span> <span class="p">|</span> <span class="k">ForEach</span><span class="n">-Object</span> <span class="p">{</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$ping</span><span class="p">.</span><span class="n">Send</span><span class="p">(</span><span class="s2">&quot;192.168.0.$_&quot;</span><span class="p">,</span> <span class="n">30</span><span class="p">).</span><span class="n">Status</span> <span class="o">-eq</span> <span class="s2">&quot;Success&quot;</span><span class="p">)</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;192.168.0.$_ responded.&quot;</span> <span class="p">}</span> <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
 
-<p>Having good descriptive varible names is crucial to writing good scripts, and is a practice that carries over to every programming language.</p>
-<p><img alt="Variable Name Meme" src="https://i.pinimg.com/originals/e6/73/bd/e673bdd42a9ae12000c59df5dfcae440.jpg" /></p>
-<p>When writing a script, try to follow a common naming case scheme like <strong>snake_case</strong> or <strong>camelCase</strong> <a href="https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841">Link to Aricle</a></p>
-<p>From <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables">about_Variables</a>:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">&lt;#</span>
-<span class="cm">A variable is a unit of memory in which values are stored.</span>
-<span class="cm">In PowerShell, variables are represented by text strings</span>
-<span class="cm">that begin with a dollar sign ($), such as $a, $process, or $my_var.</span>
-
-<span class="cm">Variable names aren&#39;t case-sensitive, and can include spaces and special characters.</span>
-
-<span class="cm">PowerShell variables are loosely typed, which means that they</span>
-<span class="cm">aren&#39;t limited to a particular type of object. A single variable</span>
-<span class="cm">can even contain a collection, or array, of different types of objects at the same time.</span>
-<span class="cm">#&gt;</span>
-
-<span class="n">ex</span><span class="err">:</span>
-<span class="nv">$a</span> <span class="p">=</span> <span class="n">12</span>                         <span class="c"># System.Int32</span>
-<span class="nv">$a</span> <span class="p">=</span> <span class="s2">&quot;Word&quot;</span>                     <span class="c"># System.String</span>
-<span class="nv">$a</span> <span class="p">=</span> <span class="n">12</span><span class="p">,</span> <span class="s2">&quot;Word&quot;</span>                 <span class="c"># array of System.Int32, System.String</span>
-<span class="nv">$a</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="err">:</span><span class="p">\</span><span class="n">Windows</span>   <span class="c"># FileInfo and DirectoryInfo types</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h4 id="numbers">Numbers<a class="headerlink" href="#numbers" title="Permanent link">&para;</a></h4>
-<p>Numbers in PowerShell can either be used implicitly, or type cast into a more specific number type.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c"># Single line comments are denoted by a # at the start of the line</span>
-<span class="c"># Anything written in a comment is ignored</span>
-<span class="n">5</span><span class="p">+</span><span class="n">5</span>
-<span class="c"># Returns 10</span>
-<span class="no">[int]</span><span class="s2">&quot;5&quot;</span><span class="p">+</span><span class="n">5</span>
-<span class="c"># Also returns 10, because the string 5 is type cast to become an integer</span>
-</code></pre></div>
-</td></tr></table>
-
+<p>Here I am taking the output of the command <code>1..255</code> which normally returns an array containing all integers between the bounds specified as the input of the following command.</p>
+<p><code>ForEach-Object</code> takes each one of those numbers and performs a ping to <code>192.168.0.X</code> where X equals that integer. I set a timeout of 30ms, because for this range everything should realistically be reached within 1-5ms.</p>
+<p>If the ping status return code is "Success" then it will <code>Write-Host</code> a string with the IP and a statement saying that it responded.</p>
 <blockquote>
-<p>PowerShell will attempt to type cast all data following a data type to be the same, ex:</p>
-</blockquote>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">function</span> <span class="n">add5</span><span class="p">(</span><span class="no">[int]</span><span class="nv">$number</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nv">$number</span> <span class="p">+</span> <span class="n">5</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="n">add5</span><span class="p">(</span><span class="n">10</span><span class="p">)</span>
-<span class="c"># Returns 15</span>
-
-<span class="n">add5</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
-<span class="cm">&lt;# Returns:</span>
-
-<span class="cm">add5 : Cannot process argument transformation on parameter &#39;number&#39;. Cannot convert value &quot;hello&quot; to type</span>
-<span class="cm">&quot;System.Int32&quot;. Error: &quot;Input string was not in a correct format.&quot;</span>
-<span class="cm">At line:5 char:5</span>
-<span class="cm">+ add5(&quot;hello&quot;)</span>
-<span class="cm">+     ~~~~~~~~~</span>
-<span class="cm">    + CategoryInfo          : InvalidData: (:) [add5], ParameterBindingArgumentTransformationException</span>
-<span class="cm">    + FullyQualifiedErrorId : ParameterArgumentTransformationError,add5</span>
-
-<span class="cm">#&gt;</span>
-
-<span class="k">function</span> <span class="n">addString5</span><span class="p">(</span><span class="no">[string]</span><span class="nv">$number</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nv">$number</span> <span class="p">+</span> <span class="n">5</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="n">addString5</span><span class="p">(</span><span class="n">10</span><span class="p">)</span>
-<span class="c"># Returns 105, because 10 is type cast to be a string, and 5 is type cast to be a string</span>
-
-<span class="c"># If the following data is unable to be cast to the first data type, PowerShell will throw an error</span>
-</code></pre></div>
-</td></tr></table>
-
-<hr />
-<h4 id="strings">Strings<a class="headerlink" href="#strings" title="Permanent link">&para;</a></h4>
-<p>Strings are sequences of characters, usually arranged in words. In PowerShell you can <em>usually</em> tell something is a string if it is encased in double quotes, "", single quotes '', or backticks ``.</p>
-<p>This article - <a href="https://powershellexplained.com/2017-01-13-powershell-variable-substitution-in-strings/">Variable Substitution</a> has great examples on variable substituion within strings in PowerShell</p>
-<p>This article from the MS Docs explains all <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_special_characters">special_Characters</a></p>
-<hr />
-<h4 id="booleans">Booleans<a class="headerlink" href="#booleans" title="Permanent link">&para;</a></h4>
-<p>A boolean is either <em>true</em> or <em>false</em>. To a computer this is represented by a single bit. If true, the bit is <em>1</em>. If false the bit is <em>0</em>.</p>
-<p>In PowerShell a boolean is represented by <code>$true</code> or <code>$false</code>, null is represented by <code>$null</code>. <a href="https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-null?view=powershell-7">All about Null</a></p>
-<p><img alt="Differences Between Values" src="https://i.redd.it/vy1n3ionqgg51.png" /></p>
-<blockquote>
-<p>This picture is in relation to JavaScript, but the main idea still transfers</p>
+<p>In a ForEach-Object the \$_ represents the current iteration object, ie. for the first iteration it is 1, then the second it is 2, then 3 etc...</p>
 </blockquote>
                 
                   
@@ -563,7 +367,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 22, 2020 14:47:42</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 20, 2020 08:25:06</span>
     
   </small>
 </div>
@@ -586,7 +390,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="intro.html" title="Week 1" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="week4.html" title="Week 4" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -595,25 +399,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Week 1
+                Week 4
               </div>
             </div>
           </a>
         
-        
-          <a href="week3.html" title="Week 3" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Week 3
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
         
       </nav>
     </div>
